@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="/dice.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottery Numbers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="/dice.svg" class="nav--img" />
+        <h2 class="nav--title">
+          Random Number Generator
+          <span class="nav--span"> - for the Eurojackpot lottery</span>
+        </h2>
+      </nav>
+    </header>
+    <main>
+      <div class="header">
+        <h3 class="header--head">About</h3>
+        <p class="header--content">
+          One friday afternoon back in November, I heard about a jackpot of almost 100million euros in the
+          Eurojackpot lottery. I was going through some vanilla JavaScript tutorials at that time and even though
+          I am usually not a regular lottery player, I had the idea to combine the lottery event with my JavaScript
+          learnings, by creating a random number generator. My biggest learning here was, using the JavaScript Set
+          constructor to create sets of random numbers without any repeating numbers. <br> <br>
+          Roll the dice below, and get your lucky numbers for the next draw of the Eurojackpot lottery <br> <br>
+          (The code for the number generator can be found <a
+            href="https://github.com/patricklemmer/random-number-generator" target="_blank"
+            class="header--content--link">here</a>.)
+        </p>
+      </div>
+      <div class="generator--wrapper">
+        <button class="play--button"><i class="fa-solid fa-dice"></i></button>
+        <div class="numbers">
+          <p class="output--info">Your numbers:</p>
+          <div class="five--numbers"></div>
+          <div class="two--numbers"></div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+
+</html>
